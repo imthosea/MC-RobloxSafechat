@@ -68,4 +68,4 @@ public class SettingsElement extends GroupElement {
 	protected List<SafechatElement> listView() {
 		return list;
 	}
-}
+}

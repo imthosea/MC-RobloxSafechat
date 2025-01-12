@@ -18,4 +18,4 @@ public final class ConfigUpdater {
 	public interface UpdateHandler {
 		void transform(JsonObject root);
 	}
-}
+}
