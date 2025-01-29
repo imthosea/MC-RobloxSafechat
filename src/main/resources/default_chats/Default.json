@@ -1,0 +1,2585 @@
+{
+  "type": "group",
+  "array": [
+    {
+      "type": "group",
+      "name": "Hello",
+      "array": [
+        {
+          "type": "group",
+          "name": "Hi",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Hi there!"
+            },
+            {
+              "type": "chat",
+              "chat": "Hi everyone"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Howdy",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Howdy partner!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Greetings",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Greetings everyone"
+            },
+            {
+              "type": "chat",
+              "chat": "Greetings Robloxians!"
+            },
+            {
+              "type": "chat",
+              "chat": "Seasons greetings!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Welcome",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Welcome to my place"
+            },
+            {
+              "type": "chat",
+              "chat": "Welcome to our base"
+            },
+            {
+              "type": "chat",
+              "chat": "Welcome to my barbeque"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "What's up?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "How are you doing?"
+            },
+            {
+              "type": "chat",
+              "chat": "How's it going?"
+            },
+            {
+              "type": "chat",
+              "chat": "What's new?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Good day",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Good morning"
+            },
+            {
+              "type": "chat",
+              "chat": "Good afternoon"
+            },
+            {
+              "type": "chat",
+              "chat": "Good evening"
+            },
+            {
+              "type": "chat",
+              "chat": "Good night"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Silly",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Waaaaaaaz up?!"
+            },
+            {
+              "type": "chat",
+              "chat": "Hullo!"
+            },
+            {
+              "type": "chat",
+              "chat": "Behold greatness, mortals!"
+            },
+            {
+              "type": "chat",
+              "chat": "Pardon me, is this Sparta?"
+            },
+            {
+              "type": "chat",
+              "chat": "THIS IS SPARTAAAA!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Happy Holidays!",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Happy New Year!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Valentine's Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Beware the Ides of March!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy St. Patrick's Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Easter!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Earth Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy 4th of July!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Thanksgiving!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Halloween!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Hanukkah!"
+            },
+            {
+              "type": "chat",
+              "chat": "Merry Christmas!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Halloween!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy May Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy Towel Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy ROBLOX Day!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy LOL Day!"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "Hey there!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Goodbye",
+      "array": [
+        {
+          "type": "group",
+          "name": "Good Night",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Sweet dreams"
+            },
+            {
+              "type": "chat",
+              "chat": "Go to sleep!"
+            },
+            {
+              "type": "chat",
+              "chat": "Lights out!"
+            },
+            {
+              "type": "chat",
+              "chat": "Bedtime"
+            },
+            {
+              "type": "chat",
+              "chat": "Going to bed now"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Later",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "See ya later"
+            },
+            {
+              "type": "chat",
+              "chat": "Later gator!"
+            },
+            {
+              "type": "chat",
+              "chat": "See you tomorrow"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Bye",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Hasta la bye bye!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Farewell",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Take care"
+            },
+            {
+              "type": "chat",
+              "chat": "Have a nice day"
+            },
+            {
+              "type": "chat",
+              "chat": "Goodluck!"
+            },
+            {
+              "type": "chat",
+              "chat": "Ta-ta for now!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Peace",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Peace out!"
+            },
+            {
+              "type": "chat",
+              "chat": "Peace dudes!"
+            },
+            {
+              "type": "chat",
+              "chat": "Rest in pieces!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Silly",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "To the batcave!"
+            },
+            {
+              "type": "chat",
+              "chat": "Over and out!"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy trails!"
+            },
+            {
+              "type": "chat",
+              "chat": "I've got to book it!"
+            },
+            {
+              "type": "chat",
+              "chat": "Tootles!"
+            },
+            {
+              "type": "chat",
+              "chat": "Smell you later!"
+            },
+            {
+              "type": "chat",
+              "chat": "GG!"
+            },
+            {
+              "type": "chat",
+              "chat": "My house is on fire! gtg."
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "I'll be right back"
+        },
+        {
+          "type": "chat",
+          "chat": "I have to go"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Friend",
+      "array": [
+        {
+          "type": "group",
+          "name": "Follow me",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Come to my place!"
+            },
+            {
+              "type": "chat",
+              "chat": "Come to my base!"
+            },
+            {
+              "type": "chat",
+              "chat": "Follow me, team!"
+            },
+            {
+              "type": "chat",
+              "chat": "Follow me"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Your place is cool",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Your place is fun"
+            },
+            {
+              "type": "chat",
+              "chat": "Your place is awesome"
+            },
+            {
+              "type": "chat",
+              "chat": "Your place looks good"
+            },
+            {
+              "type": "chat",
+              "chat": "This place is awesome!"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Thank you",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Thanks for playing"
+            },
+            {
+              "type": "chat",
+              "chat": "Thanks for visiting"
+            },
+            {
+              "type": "chat",
+              "chat": "Thanks for everything"
+            },
+            {
+              "type": "chat",
+              "chat": "No, thank you"
+            },
+            {
+              "type": "chat",
+              "chat": "Thanx"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "No problem",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Don't worry"
+            },
+            {
+              "type": "chat",
+              "chat": "That's ok"
+            },
+            {
+              "type": "chat",
+              "chat": "np"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "You are ...",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "You are great!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are good!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are cool!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are funny!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are silly!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are awesome!"
+            },
+            {
+              "type": "chat",
+              "chat": "You are doing something I don't like, please stop"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "I like ...",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "I like your name"
+            },
+            {
+              "type": "chat",
+              "chat": "I like your shirt"
+            },
+            {
+              "type": "chat",
+              "chat": "I like your place"
+            },
+            {
+              "type": "chat",
+              "chat": "I like your style"
+            },
+            {
+              "type": "chat",
+              "chat": "I like you"
+            },
+            {
+              "type": "chat",
+              "chat": "I like items"
+            },
+            {
+              "type": "chat",
+              "chat": "I like money"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Sorry",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "My bad!"
+            },
+            {
+              "type": "chat",
+              "chat": "I'm sorry"
+            },
+            {
+              "type": "chat",
+              "chat": "Whoops!"
+            },
+            {
+              "type": "chat",
+              "chat": "Please forgive me."
+            },
+            {
+              "type": "chat",
+              "chat": "I forgive you."
+            },
+            {
+              "type": "chat",
+              "chat": "I didn't mean to do that."
+            },
+            {
+              "type": "chat",
+              "chat": "Sorry, I'll stop now."
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "Wanna be friends?"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Questions",
+      "array": [
+        {
+          "type": "group",
+          "name": "Who?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Who wants to be my friend?"
+            },
+            {
+              "type": "chat",
+              "chat": "Who wants to be on my team?"
+            },
+            {
+              "type": "chat",
+              "chat": "Who made this brilliant game?"
+            },
+            {
+              "type": "chat",
+              "chat": "LOLWHO?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "What?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "What is your favorite animal?"
+            },
+            {
+              "type": "chat",
+              "chat": "What is your favorite game?"
+            },
+            {
+              "type": "chat",
+              "chat": "What is your favorite movie?"
+            },
+            {
+              "type": "chat",
+              "chat": "What is your favorite TV show?"
+            },
+            {
+              "type": "chat",
+              "chat": "What is your favorite music?"
+            },
+            {
+              "type": "chat",
+              "chat": "What are your hobbies?"
+            },
+            {
+              "type": "chat",
+              "chat": "LOLWUT?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "When?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "When are you online?"
+            },
+            {
+              "type": "chat",
+              "chat": "When is the new version coming out?"
+            },
+            {
+              "type": "chat",
+              "chat": "When can we play again?"
+            },
+            {
+              "type": "chat",
+              "chat": "When will your place be done?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Where?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Where do you want to go?"
+            },
+            {
+              "type": "chat",
+              "chat": "Where are you going?"
+            },
+            {
+              "type": "chat",
+              "chat": "Where am I?!"
+            },
+            {
+              "type": "chat",
+              "chat": "Where did you go?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "How?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "How are you today?"
+            },
+            {
+              "type": "chat",
+              "chat": "How did you make this cool place?"
+            },
+            {
+              "type": "chat",
+              "chat": "LOLHOW?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Can I...",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Can I have a tour?"
+            },
+            {
+              "type": "chat",
+              "chat": "Can I be on your team?"
+            },
+            {
+              "type": "chat",
+              "chat": "Can I be your friend?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Answers",
+      "array": [
+        {
+          "type": "group",
+          "name": "You need help?",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Check out the news section"
+            },
+            {
+              "type": "chat",
+              "chat": "Check out the help section"
+            },
+            {
+              "type": "chat",
+              "chat": "Read the wiki!"
+            },
+            {
+              "type": "chat",
+              "chat": "All the answers are in the wiki!"
+            },
+            {
+              "type": "chat",
+              "chat": "I will help you with this."
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Some people ...",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Me"
+            },
+            {
+              "type": "chat",
+              "chat": "Not me"
+            },
+            {
+              "type": "chat",
+              "chat": "You"
+            },
+            {
+              "type": "chat",
+              "chat": "All of us"
+            },
+            {
+              "type": "chat",
+              "chat": "Everyone but you"
+            },
+            {
+              "type": "chat",
+              "chat": "Builderman!"
+            },
+            {
+              "type": "chat",
+              "chat": "Telamon!"
+            },
+            {
+              "type": "chat",
+              "chat": "My team"
+            },
+            {
+              "type": "chat",
+              "chat": "My group"
+            },
+            {
+              "type": "chat",
+              "chat": "Mom"
+            },
+            {
+              "type": "chat",
+              "chat": "Dad"
+            },
+            {
+              "type": "chat",
+              "chat": "Sister"
+            },
+            {
+              "type": "chat",
+              "chat": "Brother"
+            },
+            {
+              "type": "chat",
+              "chat": "Cousin"
+            },
+            {
+              "type": "chat",
+              "chat": "Grandparent"
+            },
+            {
+              "type": "chat",
+              "chat": "Friend"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Time ...",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "In the morning"
+            },
+            {
+              "type": "chat",
+              "chat": "In the afternoon"
+            },
+            {
+              "type": "chat",
+              "chat": "At night"
+            },
+            {
+              "type": "chat",
+              "chat": "Tomorrow"
+            },
+            {
+              "type": "chat",
+              "chat": "This week"
+            },
+            {
+              "type": "chat",
+              "chat": "This month"
+            },
+            {
+              "type": "chat",
+              "chat": "Sometime"
+            },
+            {
+              "type": "chat",
+              "chat": "Sometimes"
+            },
+            {
+              "type": "chat",
+              "chat": "Whenever you want"
+            },
+            {
+              "type": "chat",
+              "chat": "Never"
+            },
+            {
+              "type": "chat",
+              "chat": "After this"
+            },
+            {
+              "type": "chat",
+              "chat": "In 10 minutes"
+            },
+            {
+              "type": "chat",
+              "chat": "In a couple of hours"
+            },
+            {
+              "type": "chat",
+              "chat": "In a couple of days"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Animals",
+          "array": [
+            {
+              "type": "group",
+              "name": "Cats",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Lion"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Tiger"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Leopard"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Cheetah"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Dogs",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Wolves"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Beagle"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Collie"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Dalmatian"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Poodle"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Spaniel"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Shepherd"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Terrier"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Retriever"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Horses",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Ponies"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Stallions"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Pwnyz"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Reptiles",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Dinosaurs"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Lizards"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Snakes"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Turtles!"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Fish",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Goldfish"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Sharks"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Sea Bass"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Halibut"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Tropical Fish"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Birds",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Eagles"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Penguins"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Parakeets"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Owls"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Hawks"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Pigeons"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Mythical Beasts",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Dragons"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Unicorns"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Sea Serpents"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Sphinx"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Cyclops"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Minotaurs"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Goblins"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Honest Politicians"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Ghosts"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Scylla and Charybdis"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Hamster"
+            },
+            {
+              "type": "chat",
+              "chat": "Monkey"
+            },
+            {
+              "type": "chat",
+              "chat": "Bears"
+            },
+            {
+              "type": "chat",
+              "chat": "Elephants"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Games",
+          "array": [
+            {
+              "type": "group",
+              "name": "Board games",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Chess"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Checkers"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Settlers of Catan"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Tigris and Euphrates"
+                },
+                {
+                  "type": "chat",
+                  "chat": "El Grande"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Stratego"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Carcassonne"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Roblox"
+            },
+            {
+              "type": "chat",
+              "chat": "BrickBattle"
+            },
+            {
+              "type": "chat",
+              "chat": "Community Building"
+            },
+            {
+              "type": "chat",
+              "chat": "Roblox Minigames"
+            },
+            {
+              "type": "chat",
+              "chat": "Contest Place"
+            },
+            {
+              "type": "chat",
+              "chat": "Action"
+            },
+            {
+              "type": "chat",
+              "chat": "Puzzle"
+            },
+            {
+              "type": "chat",
+              "chat": "Strategy"
+            },
+            {
+              "type": "chat",
+              "chat": "Racing"
+            },
+            {
+              "type": "chat",
+              "chat": "RPG"
+            },
+            {
+              "type": "chat",
+              "chat": "Obstacle Course"
+            },
+            {
+              "type": "chat",
+              "chat": "Tycoon"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Sports",
+          "array": [
+            {
+              "type": "group",
+              "name": "Watersports",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Surfing"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Swimming"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Water Polo"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Winter sports",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Skiing"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Snowboarding"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Sledding"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Skating"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Adventure",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Rock climbing"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Hiking"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Fishing"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Horseback riding"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Wacky",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Foosball"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Calvinball"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Croquet"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Cricket"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Dodgeball"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Squash"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Trampoline"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Hockey"
+            },
+            {
+              "type": "chat",
+              "chat": "Soccer"
+            },
+            {
+              "type": "chat",
+              "chat": "Football"
+            },
+            {
+              "type": "chat",
+              "chat": "Baseball"
+            },
+            {
+              "type": "chat",
+              "chat": "Basketball"
+            },
+            {
+              "type": "chat",
+              "chat": "Volleyball"
+            },
+            {
+              "type": "chat",
+              "chat": "Tennis"
+            },
+            {
+              "type": "chat",
+              "chat": "Sports team practice"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Movies/TV",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Science Fiction"
+            },
+            {
+              "type": "chat",
+              "chat": "Animated"
+            },
+            {
+              "type": "chat",
+              "chat": "Comedy"
+            },
+            {
+              "type": "chat",
+              "chat": "Romantic"
+            },
+            {
+              "type": "chat",
+              "chat": "Action"
+            },
+            {
+              "type": "chat",
+              "chat": "Fantasy"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Music",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Country"
+            },
+            {
+              "type": "chat",
+              "chat": "Jazz"
+            },
+            {
+              "type": "chat",
+              "chat": "Rap"
+            },
+            {
+              "type": "chat",
+              "chat": "Hip-hop"
+            },
+            {
+              "type": "chat",
+              "chat": "Techno"
+            },
+            {
+              "type": "chat",
+              "chat": "Classical"
+            },
+            {
+              "type": "chat",
+              "chat": "Pop"
+            },
+            {
+              "type": "chat",
+              "chat": "Rock"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Hobbies",
+          "array": [
+            {
+              "type": "group",
+              "name": "Computers",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Building computers"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Videogames"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Coding"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Hacking"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "The Internet",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "lol. teh internets!"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Watching vids"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Martial Arts",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Karate"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Judo"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Taikwon Do"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Wushu"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Street fighting"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Music lessons",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Playing in my band"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Playing piano"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Playing guitar"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Playing violin"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Playing drums"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Playing a weird instrument"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Dance"
+            },
+            {
+              "type": "chat",
+              "chat": "Gynastics"
+            },
+            {
+              "type": "chat",
+              "chat": "Listening to music"
+            },
+            {
+              "type": "chat",
+              "chat": "Arts and crafts"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Location",
+          "array": [
+            {
+              "type": "group",
+              "name": "USA",
+              "array": [
+                {
+                  "type": "group",
+                  "name": "West",
+                  "array": [
+                    {
+                      "type": "chat",
+                      "chat": "Alaska"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Arizona"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "California"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Colorado"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Hawaii"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Idaho"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Montana"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Nevada"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "New Mexico"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Oregon"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Utah"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Washington"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Wyoming"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Midwest",
+                  "array": [
+                    {
+                      "type": "chat",
+                      "chat": "Illinois"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Indiana"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Iowa"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Kansas"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Michigan"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Minnesota"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Missouri"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Nebraska"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "North Dakota"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Ohio"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "South Dakota"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Wisconsin"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Northeast",
+                  "array": [
+                    {
+                      "type": "chat",
+                      "chat": "Connecticut"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Delaware"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Maine"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Maryland"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Massachusetts"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "New Hampshire"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "New Jersey"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "New York"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Pennsylvania"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Rhode Island"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Vermont"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "South",
+                  "array": [
+                    {
+                      "type": "chat",
+                      "chat": "Alabama"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Arkansas"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Florida"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Georgia"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Kentucky"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Louisiana"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Mississippi"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "North Carolina"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Oklahoma"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "South Carolina"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Tennessee"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Texas"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "Virginia"
+                    },
+                    {
+                      "type": "chat",
+                      "chat": "West Virginia"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Alberta",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "British Columbia"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Manitoba"
+                },
+                {
+                  "type": "chat",
+                  "chat": "New Brunswick"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Newfoundland"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Northwest Territories"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Nova Scotia"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Nunavut"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Ontario"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Prince Edward Island"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Quebec"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Saskatchewan"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Yukon"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Europe",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Great Britain"
+                },
+                {
+                  "type": "chat",
+                  "chat": "England"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Scotland"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Wales"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Northern Ireland"
+                },
+                {
+                  "type": "chat",
+                  "chat": "France"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Germany"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Spain"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Italy"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Poland"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Switzerland"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Greece"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Romania"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Netherlands"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Asia",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "China"
+                },
+                {
+                  "type": "chat",
+                  "chat": "India"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Japan"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Korea"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Russia"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Vietnam"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "South America",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Argentina"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Brazil"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Africa",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "Eygpt"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Swaziland"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Canada"
+            },
+            {
+              "type": "chat",
+              "chat": "Mexico"
+            },
+            {
+              "type": "chat",
+              "chat": "Central America"
+            },
+            {
+              "type": "chat",
+              "chat": "Australia"
+            },
+            {
+              "type": "chat",
+              "chat": "Middle East"
+            },
+            {
+              "type": "chat",
+              "chat": "Antarctica"
+            },
+            {
+              "type": "chat",
+              "chat": "New Zealand"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Age",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Rugrat"
+            },
+            {
+              "type": "chat",
+              "chat": "Kid"
+            },
+            {
+              "type": "chat",
+              "chat": "Tween"
+            },
+            {
+              "type": "chat",
+              "chat": "Teen"
+            },
+            {
+              "type": "chat",
+              "chat": "Twenties"
+            },
+            {
+              "type": "chat",
+              "chat": "Old"
+            },
+            {
+              "type": "chat",
+              "chat": "Ancient"
+            },
+            {
+              "type": "chat",
+              "chat": "Mesozoic"
+            },
+            {
+              "type": "chat",
+              "chat": "I don't want to say my age. Don't ask."
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Mood",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Good"
+            },
+            {
+              "type": "chat",
+              "chat": "Great!"
+            },
+            {
+              "type": "chat",
+              "chat": "Not bad"
+            },
+            {
+              "type": "chat",
+              "chat": "Sad"
+            },
+            {
+              "type": "chat",
+              "chat": "Hyper"
+            },
+            {
+              "type": "chat",
+              "chat": "Chill"
+            },
+            {
+              "type": "chat",
+              "chat": "Happy"
+            },
+            {
+              "type": "chat",
+              "chat": "Kind of mad"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "Boy"
+        },
+        {
+          "type": "chat",
+          "chat": "Girl"
+        },
+        {
+          "type": "chat",
+          "chat": "I don't want to say boy or girl. Don't ask."
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Game",
+      "array": [
+        {
+          "type": "group",
+          "name": "Game Commands",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "regen"
+            },
+            {
+              "type": "chat",
+              "chat": "reset"
+            },
+            {
+              "type": "chat",
+              "chat": "go"
+            },
+            {
+              "type": "chat",
+              "chat": "fix"
+            },
+            {
+              "type": "chat",
+              "chat": "respawn"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "Let's build"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's battle"
+        },
+        {
+          "type": "chat",
+          "chat": "Nice one!"
+        },
+        {
+          "type": "chat",
+          "chat": "So far so good!"
+        },
+        {
+          "type": "chat",
+          "chat": "Lucky shot!"
+        },
+        {
+          "type": "chat",
+          "chat": "Oh man!"
+        },
+        {
+          "type": "chat",
+          "chat": "I challenge you to a fight!"
+        },
+        {
+          "type": "chat",
+          "chat": "Help me with this"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's go to your game"
+        },
+        {
+          "type": "chat",
+          "chat": "Can you show me how to do that?"
+        },
+        {
+          "type": "chat",
+          "chat": "Backflip!"
+        },
+        {
+          "type": "chat",
+          "chat": "Frontflip!"
+        },
+        {
+          "type": "chat",
+          "chat": "Dance!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm on your side!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Silly",
+      "array": [
+        {
+          "type": "group",
+          "name": "1337",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "i r teh pwnz0r!"
+            },
+            {
+              "type": "chat",
+              "chat": "w00t!"
+            },
+            {
+              "type": "chat",
+              "chat": "z0mg h4x!"
+            },
+            {
+              "type": "chat",
+              "chat": "ub3rR0xXorzage!"
+            }
+          ]
+        },
+        {
+          "type": "chat",
+          "chat": "Muahahahaha!"
+        },
+        {
+          "type": "chat",
+          "chat": "all your base are belong to me!"
+        },
+        {
+          "type": "chat",
+          "chat": "GET OFF MAH LAWN"
+        },
+        {
+          "type": "chat",
+          "chat": "TEH EPIK DUCK IS COMING!!!"
+        },
+        {
+          "type": "chat",
+          "chat": "ROFL"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Yes",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Absolutely!"
+        },
+        {
+          "type": "chat",
+          "chat": "Rock on!"
+        },
+        {
+          "type": "chat",
+          "chat": "Totally!"
+        },
+        {
+          "type": "chat",
+          "chat": "Juice!"
+        },
+        {
+          "type": "chat",
+          "chat": "Yay!"
+        },
+        {
+          "type": "chat",
+          "chat": "Yesh"
+        },
+        {
+          "type": "chat",
+          "chat": "Indeed"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "No",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Ummm. No."
+        },
+        {
+          "type": "chat",
+          "chat": "..."
+        },
+        {
+          "type": "chat",
+          "chat": "Stop!"
+        },
+        {
+          "type": "chat",
+          "chat": "Go away!"
+        },
+        {
+          "type": "chat",
+          "chat": "Don't do that"
+        },
+        {
+          "type": "chat",
+          "chat": "Stop breaking the rules"
+        },
+        {
+          "type": "chat",
+          "chat": "I don't want to"
+        },
+        {
+          "type": "chat",
+          "chat": "I decline!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Ok",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Well... ok"
+        },
+        {
+          "type": "chat",
+          "chat": "Sure"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Uncertain",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Maybe"
+        },
+        {
+          "type": "chat",
+          "chat": "I don't know"
+        },
+        {
+          "type": "chat",
+          "chat": "idk"
+        },
+        {
+          "type": "chat",
+          "chat": "I can't decide"
+        },
+        {
+          "type": "chat",
+          "chat": "Hmm..."
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Emoticons",
+      "array": [
+        {
+          "type": "chat",
+          "chat": ":-)"
+        },
+        {
+          "type": "chat",
+          "chat": ":-("
+        },
+        {
+          "type": "chat",
+          "chat": ":D"
+        },
+        {
+          "type": "chat",
+          "chat": ":-O"
+        },
+        {
+          "type": "chat",
+          "chat": "lol"
+        },
+        {
+          "type": "chat",
+          "chat": "=D"
+        },
+        {
+          "type": "chat",
+          "chat": "D="
+        },
+        {
+          "type": "chat",
+          "chat": "XD"
+        },
+        {
+          "type": "chat",
+          "chat": ";D"
+        },
+        {
+          "type": "chat",
+          "chat": ";)"
+        },
+        {
+          "type": "chat",
+          "chat": "O_O"
+        },
+        {
+          "type": "chat",
+          "chat": "=)"
+        },
+        {
+          "type": "chat",
+          "chat": "@_@"
+        },
+        {
+          "type": "chat",
+          "chat": ">_<"
+        },
+        {
+          "type": "chat",
+          "chat": "T_T"
+        },
+        {
+          "type": "chat",
+          "chat": "^_^"
+        },
+        {
+          "type": "chat",
+          "chat": "<(0_0<) <(0_0)> (>0_0)> KIRBY DANCE"
+        },
+        {
+          "type": "chat",
+          "chat": ")';"
+        },
+        {
+          "type": "chat",
+          "chat": ":3"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Ratings",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Rate it!"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 0 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 1 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 2 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 3 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 4 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 5 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 6 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 7 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 8 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 9 out of 10"
+        },
+        {
+          "type": "chat",
+          "chat": "I give it a 10 out of 10!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "ez",
+      "array": [
+        {
+          "type": "group",
+          "name": "Questions",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Hey helper, how play game?"
+            },
+            {
+              "type": "chat",
+              "chat": "Anyone else really like Rick Astley?"
+            },
+            {
+              "type": "chat",
+              "chat": "You're a great person! Do you want to play some Hypixel games with me?"
+            },
+            {
+              "type": "chat",
+              "chat": "If the Minecraft world is infinite, how does the sun revolve around it?"
+            },
+            {
+              "type": "chat",
+              "chat": "Maybe we can have a rematch?"
+            },
+            {
+              "type": "chat",
+              "chat": "What happens if I add chocolate milk to macaroni and cheese?"
+            },
+            {
+              "type": "chat",
+              "chat": "I like pasta, do you prefer nachos?"
+            },
+            {
+              "type": "chat",
+              "chat": "Lets be friends instead of fighting okay?"
+            },
+            {
+              "type": "chat",
+              "chat": "I like pasta, do you prefer nachos?"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Statements",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Sometimes I sing soppy, love songs in the car."
+            },
+            {
+              "type": "chat",
+              "chat": "I like long walks on the beach and playing Hypixel"
+            },
+            {
+              "type": "chat",
+              "chat": "In my free time I like to watch cat videos on Youtube"
+            },
+            {
+              "type": "chat",
+              "chat": "When I saw the witch with the potion, I knew there was trouble brewing."
+            },
+            {
+              "type": "chat",
+              "chat": "Hello everyone! I am an innocent player who loves everything Hypixel."
+            },
+            {
+              "type": "chat",
+              "chat": "Doin a bamboozle fren."
+            },
+            {
+              "type": "chat",
+              "chat": "I had something to say, then I forgot it."
+            },
+            {
+              "type": "chat",
+              "chat": "When nothing is right, go left."
+            },
+            {
+              "type": "chat",
+              "chat": "You are very good at the game friend."
+            },
+            {
+              "type": "chat",
+              "chat": "I like pineapple on my pizza"
+            },
+            {
+              "type": "chat",
+              "chat": "Can you paint with all the colors of the wind"
+            },
+            {
+              "type": "chat",
+              "chat": "Blue is greener than purple for sure"
+            },
+            {
+              "type": "chat",
+              "chat": "I need help, teach me how to play!"
+            },
+            {
+              "type": "chat",
+              "chat": "Your personality shines brighter than the sun."
+            },
+            {
+              "type": "chat",
+              "chat": "I heard you like Minecraft, so I built a computer in Minecraft in which you can Minecraft while Minecrafting in your Minecraft."
+            },
+            {
+              "type": "chat",
+              "chat": "Why can't the Ender Dragon read a book? Because he always starts at the End."
+            },
+            {
+              "type": "chat",
+              "chat": "I sometimes try to say bad things then this happens :("
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Exclaimation",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "Wait... This isn't what I typed!"
+            },
+            {
+              "type": "chat",
+              "chat": "Please go easy on me, this is my first game!"
+            },
+            {
+              "type": "chat",
+              "chat": "Plz give me doggo memes!"
+            },
+            {
+              "type": "chat",
+              "chat": "Behold, the great and powerful, my magnificent and almighty nemesis!"
+            },
+            {
+              "type": "chat",
+              "chat": "Your clicks per second are godly :eek:"
+            },
+            {
+              "type": "chat",
+              "chat": "I need help, teach me how to play!"
+            },
+            {
+              "type": "chat",
+              "chat": "I like Minecraft pvp but you are truly better than me!"
+            },
+            {
+              "type": "chat",
+              "chat": "I have really enjoyed playing with you! <3"
+            },
+            {
+              "type": "chat",
+              "chat": "ILY <3"
+            },
+            {
+              "type": "chat",
+              "chat": "Pineapple doesn't go on pizza!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chat",
+      "chat": "Use the Chat menu to talk to me."
+    },
+    {
+      "type": "chat",
+      "chat": "I can only see message chats."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 package me.thosea.robloxsafechat.mixin;
 
-import me.thosea.robloxsafechat.config.loader.ConfigLoader;
+import me.thosea.robloxsafechat.config.loader.ConfigHandler;
 import net.minecraft.client.multiplayer.ClientPacketListener;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinClientPacketListener {
 	@Inject(method = "handleLogin", at = @At("RETURN"))
 	private void onSetLevel(CallbackInfo ci) {
-		ConfigLoader.sendErrorMessagesInChat();
+		ConfigHandler.sendErrorMessagesInChat();
 	}
 }

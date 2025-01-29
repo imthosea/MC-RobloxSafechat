@@ -5,7 +5,6 @@ import me.thosea.robloxsafechat.button.SCButton;
 import me.thosea.robloxsafechat.config.SafechatConfig;
 import me.thosea.robloxsafechat.mixin.ChatScreenAccessor;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Consumer;
@@ -22,8 +21,8 @@ public interface SafechatElement {
 	};
 
 	SCButton getButton();
-	boolean mouseClicked(GuiGraphics graphics, int mouseX, int mouseY, int clickType);
-	boolean shouldShow(GuiGraphics graphics, int mouseX, int mouseY);
+	boolean mouseClicked(int mouseX, int mouseY, int clickType);
+	boolean shouldShow(int mouseX, int mouseY);
 	void setParent(GroupElement parent);
 
 	@Nullable

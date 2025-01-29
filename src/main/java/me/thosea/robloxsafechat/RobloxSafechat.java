@@ -1,7 +1,7 @@
 package me.thosea.robloxsafechat;
 
 import me.thosea.robloxsafechat.config.DefaultChats;
-import me.thosea.robloxsafechat.config.loader.ConfigLoader;
+import me.thosea.robloxsafechat.config.loader.ConfigHandler;
 import me.thosea.robloxsafechat.element.ChatElement;
 import me.thosea.robloxsafechat.element.GroupElement;
 import me.thosea.robloxsafechat.mixin.IdentifierAccessor;
@@ -34,7 +34,7 @@ public final class RobloxSafechat implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		ConfigLoader.reload();
+		ConfigHandler.reload();
 	}
 
 	public static final class Builderman { // BUILDERMAN!??!!?!?!?1/1/1!?!?/1//!/?!/1/
