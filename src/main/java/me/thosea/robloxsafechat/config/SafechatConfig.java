@@ -2,8 +2,21 @@ package me.thosea.robloxsafechat.config;
 
 import me.thosea.robloxsafechat.config.loader.ConfigOption;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public final class SafechatConfig {
 	private SafechatConfig() {}
+
+	public static final ConfigOption<String> SELECTED_PRESET = new ConfigOption<>(
+			"selected_preset",
+			ConfigOption.STRING_TYPE,
+			"Default",
+			(value, setter) -> {
+				setter.accept(String.format("Preset: %s", value), null);
+			}
+	);
+	public static final Map<String, SafechatPreset> PRESETS = new HashMap<>();
 
 	public static final ConfigOption<Float> SCALE = new ConfigOption<>(
 			"scale",

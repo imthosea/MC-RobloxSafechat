@@ -2,8 +2,6 @@ package me.thosea.robloxsafechat.element;
 
 import com.google.gson.JsonElement;
 import me.thosea.robloxsafechat.button.SCButton;
-import me.thosea.robloxsafechat.config.loader.ConfigLoader;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
 
@@ -28,7 +26,6 @@ public class ButtonElement implements SafechatElement {
 		Runnable onPress = configUpdate == null ? action : () -> {
 			action.run();
 			configUpdate.accept(getButton().getButton());
-			ConfigLoader.writeConfig();
 		};
 
 		this.button = new SCButton(Component.literal(name), false, onPress);
@@ -38,13 +35,13 @@ public class ButtonElement implements SafechatElement {
 	}
 
 	@Override
-	public boolean mouseClicked(GuiGraphics graphics, int mouseX, int mouseY, int clickType) {
+	public boolean mouseClicked(int mouseX, int mouseY, int clickType) {
 		return button.mouseClicked(mouseX, mouseY, clickType);
 	}
 
 	@Override
-	public boolean shouldShow(GuiGraphics graphics, int mouseX, int mouseY) {
-		return parent.show && button.isHovered(graphics, mouseX, mouseY);
+	public boolean shouldShow(int mouseX, int mouseY) {
+		return parent.show && button.isHovered(mouseX, mouseY);
 	}
 
 	@Override

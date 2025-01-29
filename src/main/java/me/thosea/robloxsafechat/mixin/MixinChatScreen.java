@@ -4,8 +4,8 @@ import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
 import me.thosea.robloxsafechat.RobloxSafechat;
 import me.thosea.robloxsafechat.config.SafechatConfig;
-import me.thosea.robloxsafechat.element.GroupElement;
 import me.thosea.robloxsafechat.element.SettingsElement;
+import me.thosea.robloxsafechat.other.ChatScreenContext;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ComponentPath;
 import net.minecraft.client.gui.GuiGraphics;
@@ -30,9 +30,7 @@ public abstract class MixinChatScreen extends Screen {
 	@Unique private ImageButton safechat$chatsButton;
 	@Unique private ImageButton safechat$settingsButton;
 
-	@Unique private GroupElement safechat$renderGroup;
-	@Unique private ImageButton safechat$openedButton;
-	@Unique private GuiGraphics safechat$graphics; // :concern:
+	@Unique private GuiGraphics safechat$graphics;
 
 	@Shadow protected EditBox input;
 
@@ -55,34 +53,29 @@ public abstract class MixinChatScreen extends Screen {
 	private void afterRender(GuiGraphics graphics, int mouseX, int mouseY, float f, CallbackInfo ci) {
 		this.safechat$graphics = graphics;
 
-		if(safechat$renderGroup != null) {
+		if(ChatScreenContext.isMenuOpen()) {
 			float scale = SafechatConfig.SCALE.get();
 
-			safechat$renderGroup.renderGroup(
+			ChatScreenContext.getRenderGroup().renderGroup(
 					graphics,
-					(int) (safechat$openedButton.getX() - (80 * scale)),
-					RobloxSafechat.renderY = (int) (safechat$openedButton.getY() - (20 * scale)),
+					(int) (ChatScreenContext.getOpenButton().getX() - (80 * scale)),
+					RobloxSafechat.renderY = (int) (ChatScreenContext.getOpenButton().getY() - (20 * scale)),
 					mouseX, mouseY);
 		}
 	}
 
 	@Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
 	private void onMouseClicked(double x, double y, int type, CallbackInfoReturnable<Boolean> cir) {
-		if(safechat$renderGroup != null && safechat$graphics != null) {
-			if(!safechat$renderGroup.mouseClicked(safechat$graphics, (int) x, (int) y, type)
-					|| (safechat$openedButton == safechat$chatsButton && SafechatConfig.CLOSE_AFTER_SEND.get())) {
-				safechat$renderGroup = null;
-				safechat$openedButton = null;
+		if(ChatScreenContext.isMenuOpen() && safechat$graphics != null) {
+			if(!ChatScreenContext.clickRenderGroup((int) x, (int) y, type)) {
+				ChatScreenContext.closeMenu();
 			}
-
 			cir.setReturnValue(true);
 		} else if(safechat$chatsButton.mouseClicked(x, y, type)) {
-			safechat$renderGroup = RobloxSafechat.ROOT;
-			safechat$openedButton = safechat$chatsButton;
+			ChatScreenContext.open(RobloxSafechat.ROOT, safechat$chatsButton);
 			cir.setReturnValue(true);
 		} else if(safechat$settingsButton.mouseClicked(x, y, type)) {
-			safechat$renderGroup = SettingsElement.INSTANCE;
-			safechat$openedButton = safechat$settingsButton;
+			ChatScreenContext.open(SettingsElement.INSTANCE, safechat$settingsButton);
 			SettingsElement.INSTANCE.init();
 			cir.setReturnValue(true);
 		}
@@ -90,8 +83,12 @@ public abstract class MixinChatScreen extends Screen {
 
 	@Inject(method = "resize", at = @At("HEAD"))
 	private void onResize(Minecraft minecraft, int i, int j, CallbackInfo ci) {
-		safechat$renderGroup = null;
-		safechat$openedButton = null;
+		ChatScreenContext.closeMenu();
+	}
+
+	@Inject(method = "removed", at = @At("TAIL"))
+	private void onRemove(CallbackInfo ci) {
+		ChatScreenContext.closeMenu();
 	}
 
 	private ImageButton safechat$makeButton(int x,
@@ -108,7 +105,7 @@ public abstract class MixinChatScreen extends Screen {
 			public void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float f) {
 				ResourceLocation icon;
 
-				if(safechat$openedButton == this) {
+				if(ChatScreenContext.getOpenButton() == this) {
 					icon = selected;
 				} else if(this.isHovered()) {
 					icon = hovered;
@@ -135,11 +132,11 @@ public abstract class MixinChatScreen extends Screen {
 			private long lastMouseMoveTime; // milliseconds
 
 			private float getOpacity(int mouseX, int mouseY) {
-				if(this.isHovered() || safechat$openedButton == this) {
+				if(this.isHovered() || ChatScreenContext.getOpenButton() == this) {
 					return 1f;
 				} else if(safechat$chatsButton.isHovered()
 						|| safechat$settingsButton.isHovered()
-						|| safechat$openedButton != null
+						|| ChatScreenContext.isMenuOpen()
 						|| !SafechatConfig.MOUSE_AFFECTS_OPACITY.get()) {
 					return Math.max(0.6f, getChatFillOpacity());
 				} else {
@@ -147,7 +144,6 @@ public abstract class MixinChatScreen extends Screen {
 					float xDelta = (float) (getX() - mouseX) / window.getScreenWidth();
 					float yDelta = (float) (getY() - mouseY) / window.getScreenHeight();
 
-					// pythagoras my beloved
 					double dist = 1f - (Math.sqrt((xDelta * xDelta) + (yDelta * yDelta)) + 0.5);
 
 					long timeSinceMouseMove;
