@@ -15,7 +15,6 @@ import java.util.function.Supplier;
 
 final class SCButtonHandle extends Button {
 	boolean isSettingsButton = false;
-	boolean skipRender = false;
 
 	private float scale;
 	private int renderX;
@@ -42,22 +41,13 @@ final class SCButtonHandle extends Button {
 		}
 	}
 
-	@Override
-	protected void renderWidget(GuiGraphics guiGraphics, int i, int j, float f) {
-		if(skipRender) {
-			skipRender = false;
-		} else {
-			super.renderWidget(guiGraphics, i, j, f);
-		}
-	}
-
 	void calculatePosAndScale() {
 		int textWidth = Minecraft.getInstance().font.width(getMessage());
 
 		if(textWidth > SCButton.BASE_WIDTH) {
 			scale = ((float) (SCButton.BASE_WIDTH - 4) / (float) textWidth);
 
-			if(!isSettingsButton) {
+			if(!isSettingsButton || getTooltip() == null) {
 				if(scale <= SafechatConfig.TEXT_SCALE_THRESHOLD.get()) {
 					setTooltip(Tooltip.create(getMessage()));
 				} else {

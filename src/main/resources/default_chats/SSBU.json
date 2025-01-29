@@ -1,0 +1,407 @@
+{
+  "type": "group",
+  "array": [
+    {
+      "type": "group",
+      "name": "Greetings",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Hi there!"
+        },
+        {
+          "type": "chat",
+          "chat": "Nice to meet you."
+        },
+        {
+          "type": "chat",
+          "chat": "Welcome!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm glad you're here!"
+        },
+        {
+          "type": "chat",
+          "chat": "Well played."
+        },
+        {
+          "type": "chat",
+          "chat": "Good morning."
+        },
+        {
+          "type": "chat",
+          "chat": "Hello."
+        },
+        {
+          "type": "chat",
+          "chat": "Good evening."
+        },
+        {
+          "type": "chat",
+          "chat": "Nice to meet you!"
+        },
+        {
+          "type": "chat",
+          "chat": "Long time no see!"
+        },
+        {
+          "type": "chat",
+          "chat": "We meet again..."
+        },
+        {
+          "type": "chat",
+          "chat": "Thanks, as always!"
+        },
+        {
+          "type": "chat",
+          "chat": "Same here!"
+        },
+        {
+          "type": "chat",
+          "chat": "Go easy on me"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Preparation",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "OK"
+        },
+        {
+          "type": "chat",
+          "chat": "All right!"
+        },
+        {
+          "type": "chat",
+          "chat": "Please wait."
+        },
+        {
+          "type": "chat",
+          "chat": "Ready!"
+        },
+        {
+          "type": "chat",
+          "chat": "Thank you for waiting."
+        },
+        {
+          "type": "chat",
+          "chat": "I'll be away for a bit."
+        },
+        {
+          "type": "chat",
+          "chat": "I'm back."
+        },
+        {
+          "type": "chat",
+          "chat": "I'll spectate."
+        },
+        {
+          "type": "chat",
+          "chat": "I'm taking a break."
+        },
+        {
+          "type": "chat",
+          "chat": "Please enter the ring."
+        },
+        {
+          "type": "chat",
+          "chat": "Please wait until the ring is full."
+        },
+        {
+          "type": "chat",
+          "chat": "Waiting for other participants."
+        },
+        {
+          "type": "chat",
+          "chat": "Please change teams."
+        },
+        {
+          "type": "chat",
+          "chat": "One more battle with the same teams!"
+        },
+        {
+          "type": "chat",
+          "chat": "Changing fighter."
+        },
+        {
+          "type": "chat",
+          "chat": "Changing stage."
+        },
+        {
+          "type": "chat",
+          "chat": "Changing rules."
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Before Battle (1)",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Go easy on me!"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's have some fun."
+        },
+        {
+          "type": "chat",
+          "chat": "I'm excited!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm so thrilled!"
+        },
+        {
+          "type": "chat",
+          "chat": "Bring it on!"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's get started!"
+        },
+        {
+          "type": "chat",
+          "chat": "You can't stop me!"
+        },
+        {
+          "type": "chat",
+          "chat": "I play for keeps..."
+        },
+        {
+          "type": "chat",
+          "chat": "I'm gonna get flashy!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm gonna win!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm burning to fight!"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's really go for it!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'll end it here!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Before Battle (2)",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "I'll win this time!"
+        },
+        {
+          "type": "chat",
+          "chat": "I can keep going!"
+        },
+        {
+          "type": "chat",
+          "chat": "I've got you now!"
+        },
+        {
+          "type": "chat",
+          "chat": "Our battle starts here!"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's have a good battle!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'm gonna go all out from the beginning!"
+        },
+        {
+          "type": "chat",
+          "chat": "Edges don't scare me!"
+        },
+        {
+          "type": "chat",
+          "chat": "Lose the battle, win the war, launch the opponent!"
+        },
+        {
+          "type": "chat",
+          "chat": "Hear the roar of my full-force netural attack!"
+        },
+        {
+          "type": "chat",
+          "chat": "Going for a flashy attack!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'll take you on!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Thoughts",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Good!"
+        },
+        {
+          "type": "chat",
+          "chat": "Good fight!"
+        },
+        {
+          "type": "chat",
+          "chat": "Perfect!"
+        },
+        {
+          "type": "chat",
+          "chat": "Nice!"
+        },
+        {
+          "type": "chat",
+          "chat": "Nice fight!"
+        },
+        {
+          "type": "chat",
+          "chat": "Wonderful!"
+        },
+        {
+          "type": "chat",
+          "chat": "Nicely done!"
+        },
+        {
+          "type": "chat",
+          "chat": "I expected nothing less!"
+        },
+        {
+          "type": "chat",
+          "chat": "Woah!"
+        },
+        {
+          "type": "chat",
+          "chat": "Lucky!"
+        },
+        {
+          "type": "chat",
+          "chat": "It's decided!"
+        },
+        {
+          "type": "chat",
+          "chat": "What a comeback!"
+        },
+        {
+          "type": "chat",
+          "chat": "Dunktastic!"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Thoughts (2)",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "Nice teamwork!"
+        },
+        {
+          "type": "chat",
+          "chat": "What a great team!"
+        },
+        {
+          "type": "chat",
+          "chat": "That was a close one!"
+        },
+        {
+          "type": "chat",
+          "chat": "So close!"
+        },
+        {
+          "type": "chat",
+          "chat": "Grrrrr."
+        },
+        {
+          "type": "chat",
+          "chat": "You got me!"
+        },
+        {
+          "type": "chat",
+          "chat": "How dissapointing!"
+        },
+        {
+          "type": "chat",
+          "chat": "I'll try harder next time!"
+        },
+        {
+          "type": "chat",
+          "chat": "Congrats!"
+        },
+        {
+          "type": "chat",
+          "chat": "Thanks"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Goodbyes",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "I'll leave after a few more rounds."
+        },
+        {
+          "type": "chat",
+          "chat": "The next battle is my last."
+        },
+        {
+          "type": "chat",
+          "chat": "I'm gonna head out."
+        },
+        {
+          "type": "chat",
+          "chat": "Shutting down the arena!"
+        },
+        {
+          "type": "chat",
+          "chat": "Fun times!"
+        },
+        {
+          "type": "chat",
+          "chat": "Peace!"
+        },
+        {
+          "type": "chat",
+          "chat": "Let's smash again!"
+        },
+        {
+          "type": "chat",
+          "chat": "Thanks!"
+        },
+        {
+          "type": "chat",
+          "chat": "Bye bye!"
+        },
+        {
+          "type": "chat",
+          "chat": "Goodbye."
+        },
+        {
+          "type": "chat",
+          "chat": "Good night."
+        },
+        {
+          "type": "chat",
+          "chat": "Thank you very much."
+        }
+      ]
+    }
+  ]
+}

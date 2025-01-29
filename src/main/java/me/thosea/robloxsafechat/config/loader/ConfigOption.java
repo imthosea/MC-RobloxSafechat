@@ -28,6 +28,25 @@ public class ConfigOption<T> {
 			return !value;
 		}
 	};
+	public static final OptionType<String> STRING_TYPE = new OptionType<>() {
+		@Override
+		public JsonElement serialize(String value) {
+			return new JsonPrimitive(value);
+		}
+		@Override
+		public String deserialize(JsonElement element) {
+			return element.getAsString();
+		}
+		@Override
+		public String nextValue(String value) {
+			throw new UnsupportedOperationException(); // ConfigOption uses buttons for this
+		}
+		@Override
+		public boolean nameInTooltip() {
+			return false;
+		}
+	};
+
 	public static OptionType<Float> floatOptionType(float min, float max) {
 		return new OptionType<>() {
 			@Override
@@ -91,6 +110,7 @@ public class ConfigOption<T> {
 	public ButtonElement makeButton() {
 		return new ButtonElement(() -> {
 			this.set(type.nextValue(value));
+			ConfigHandler.writeConfig();
 		}, button -> {
 			nameAndTooltipUpdater.accept(value, (name, tooltip) -> {
 				button.setMessage(Component.literal(name));
@@ -104,13 +124,21 @@ public class ConfigOption<T> {
 		});
 	}
 
-	public void reset() {
-		this.set(getDefault());
-	}
-
 	public void set(T value) {
 		this.value = value;
 		changeListeners.forEach(listener -> listener.accept(value));
+	}
+
+	public void setRaw(T value) {
+		this.value = value;
+	}
+
+	public void triggerChange() {
+		changeListeners.forEach(listener -> listener.accept(value));
+	}
+
+	public void resetRaw() {
+		this.setRaw(getDefault());
 	}
 
 	public interface OptionType<T> {

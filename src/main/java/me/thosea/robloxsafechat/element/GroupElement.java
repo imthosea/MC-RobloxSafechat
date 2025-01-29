@@ -49,7 +49,7 @@ public class GroupElement implements SafechatElement {
 		for(SafechatElement element : listView()) {
 			element.getButton().render(graphics, x, y, mouseX, mouseY);
 
-			if(element instanceof GroupElement subgroup && subgroup.shouldShow(graphics, mouseX, mouseY)) {
+			if(element instanceof GroupElement subgroup && subgroup.shouldShow(mouseX, mouseY)) {
 				subgroup.renderGroup(graphics,
 						x - SCButton.WIDTH,
 						getSubgroupY(y, subgroup),
@@ -88,11 +88,11 @@ public class GroupElement implements SafechatElement {
 	}
 
 	@Override
-	public boolean mouseClicked(GuiGraphics graphics, int mouseX, int mouseY, int clickType) {
-		if(!shouldShow(graphics, mouseX, mouseY)) return false;
+	public boolean mouseClicked(int mouseX, int mouseY, int clickType) {
+		if(!shouldShow(mouseX, mouseY)) return false;
 
 		for(SafechatElement element : listView()) {
-			if(element.mouseClicked(graphics, mouseX, mouseY, clickType)) {
+			if(element.mouseClicked(mouseX, mouseY, clickType)) {
 				return true;
 			}
 		}
@@ -101,7 +101,7 @@ public class GroupElement implements SafechatElement {
 	}
 
 	@Override
-	public boolean shouldShow(GuiGraphics graphics, int mouseX, int mouseY) {
+	public boolean shouldShow(int mouseX, int mouseY) {
 		if(parent == null) {
 			show = true;
 			return true;
@@ -110,12 +110,12 @@ public class GroupElement implements SafechatElement {
 			return false;
 		}
 
-		if(button != null && button.isHovered(graphics, mouseX, mouseY)) {
+		if(button != null && button.isHovered(mouseX, mouseY)) {
 			show = true;
 			return true;
 		} else {
 			for(SafechatElement element : listView()) {
-				if(element.shouldShow(graphics, mouseX, mouseY)) {
+				if(element.shouldShow(mouseX, mouseY)) {
 					return true;
 				}
 			}
