@@ -10,7 +10,6 @@ public final class ConfigFiles {
 	public static final File CONFIG_FOLDER = new File(
 			FabricLoader.getInstance().getConfigDir().toFile(),
 			"robloxsafechat");
-
 	public static final File CONFIG_FILE = new File(CONFIG_FOLDER, "config.json");
-	public static final File MESSAGES_FILE = new File(CONFIG_FOLDER, "messages.json");
+	public static final File MESSAGES_FOLDER = new File(CONFIG_FOLDER, "messages");
 }

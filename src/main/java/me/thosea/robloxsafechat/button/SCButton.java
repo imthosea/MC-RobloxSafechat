@@ -74,10 +74,12 @@ public class SCButton {
 		return element.mouseClicked(mouseX, mouseY, clickType);
 	}
 
-	public boolean isHovered(GuiGraphics graphics, int mouseX, int mouseY) {
-		element.skipRender = true;
-		element.render(graphics, mouseX, mouseY, 1.0f);
-		return element.isHovered();
+	public boolean isHovered(int mouseX, int mouseY) {
+		return element.visible
+				&& mouseX >= element.getX()
+				&& mouseY >= element.getY()
+				&& mouseX < element.getX() + element.getWidth()
+				&& mouseY < element.getY() + element.getHeight();
 	}
 
 	public Button getButton() {
