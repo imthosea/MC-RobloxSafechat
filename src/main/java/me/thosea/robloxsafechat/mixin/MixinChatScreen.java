@@ -14,6 +14,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.navigation.FocusNavigationEvent;
 import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -114,7 +115,7 @@ public abstract class MixinChatScreen extends Screen {
 						1.0f, 1.0f, 1.0f,
 						getOpacity(mouseX, mouseY) * SafechatConfig.OPACITY_MULTIPLIER.get());
 
-				graphics.blitSprite(icon,
+				graphics.blitSprite(RenderType::guiTextured, icon,
 						this.getX(), this.getY(),
 						this.width, this.height);
 
