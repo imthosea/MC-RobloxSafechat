@@ -14,7 +14,11 @@ public interface SafechatElement {
 		Minecraft client = Minecraft.getInstance();
 
 		if(SafechatConfig.INSTANTLY_SEND.get()) {
-			client.player.connection.sendChat(text);
+			if(text.startsWith("/")) {
+				client.player.connection.sendCommand(text.substring(1));
+			} else {
+				client.player.connection.sendChat(text);
+			}
 		} else {
 			((ChatScreenAccessor) client.screen).insertText(text, false);
 		}
