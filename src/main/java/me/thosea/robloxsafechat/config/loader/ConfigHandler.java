@@ -17,7 +17,6 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.ChatComponent;
 import net.minecraft.network.chat.ClickEvent;
-import net.minecraft.network.chat.ClickEvent.Action;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.HoverEvent;
 
@@ -78,7 +77,7 @@ public final class ConfigHandler {
 	}
 
 	private static void loadMessages(File folder) {
-		//noinspection DataFlowIssue - checked by isDirectory
+		// noinspection DataFlowIssue - checked by isDirectory
 		for(File file : folder.listFiles()) {
 			if(file.isDirectory()) {
 				loadMessages(file);
@@ -241,10 +240,10 @@ public final class ConfigHandler {
 			return style
 					.withUnderlined(true)
 					.withColor(ChatFormatting.GREEN)
-					.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
+					.withHoverEvent(new HoverEvent.ShowText(
 							Component.literal("Click to open the log file.")
 									.withStyle(ChatFormatting.GREEN)))
-					.withClickEvent(new ClickEvent(Action.OPEN_FILE, path.toString()));
+					.withClickEvent(new ClickEvent.OpenFile(path.toString()));
 		});
 
 		if(configError) {

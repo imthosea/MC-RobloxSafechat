@@ -87,6 +87,11 @@ public abstract class MixinChatScreen extends Screen {
 		ChatScreenContext.closeMenu();
 	}
 
+	@Inject(method = "removed", at = @At("TAIL"))
+	private void onRemove(CallbackInfo ci) {
+		ChatScreenContext.closeMenu();
+	}
+
 	private ImageButton safechat$makeButton(int x,
 	                                        ResourceLocation normal, ResourceLocation hovered,
 	                                        ResourceLocation selected) {
@@ -109,8 +114,7 @@ public abstract class MixinChatScreen extends Screen {
 					icon = normal;
 				}
 
-				RenderSystem.enableBlend();
-				RenderSystem.defaultBlendFunc();
+				graphics.flush();
 				RenderSystem.setShaderColor(
 						1.0f, 1.0f, 1.0f,
 						getOpacity(mouseX, mouseY) * SafechatConfig.OPACITY_MULTIPLIER.get());
@@ -119,8 +123,8 @@ public abstract class MixinChatScreen extends Screen {
 						this.getX(), this.getY(),
 						this.width, this.height);
 
+				graphics.flush();
 				RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, 1.0f);
-				RenderSystem.disableBlend();
 			}
 
 			private int lastMouseX;
