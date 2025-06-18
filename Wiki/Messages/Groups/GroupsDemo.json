@@ -1,0 +1,40 @@
+{
+  "type": "group",
+  "name": "Here's another group!",
+  "array": [
+    {
+      "type": "chat",
+      "chat": "This is in the root group!"
+    },
+    {
+      "type": "group",
+      "name": "Here's a group!",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "This is in the above group!"
+        },
+        {
+          "type": "group",
+          "name": "This group is inside the above group!",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "This chat is inside a group inside root group!"
+             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Here's another group!",
+      "array": [
+        {
+          "type": "chat",
+          "chat": "This chat is inside the bottom group!"
+        }
+      ]
+    }
+  ]
+}
