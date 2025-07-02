@@ -6,7 +6,7 @@
   "name": "RobloxSafechat",
   "description": "Roblox's old safechat feature from 2007-2014 now in Minecraft!",
   "authors": ["Tiny Games - idea, icons & all default messages", "Thosea - programming"],
-  "license": "MIT",
+  "license": "BSD 3-clause",
   "icon": "assets/robloxsafechat/icon.png",
   "entrypoints": {
     "client": [
@@ -17,9 +17,9 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.source": "https://github.com/TinyGamesCoding/MC-Safechat",
-        "modmenu.issues": "https://github.com/TinyGamesCoding/MC-Safechat/issues",
-        "modmenu.wiki": "https://github.com/TinyGamesCoding/MC-Safechat/wiki",
+        "modmenu.source": "https://github.com/imthosea/MC-RobloxSafechat",
+        "modmenu.issues": "https://github.com/imthosea/MC-RobloxSafechat/issues",
+        "modmenu.wiki": "https://github.com/imthosea/MC-RobloxSafechat/wiki",
         "modmenu.modrinth": "https://modrinth.com/mod/robloxsafechat/"
       },
       "update_checker": true
