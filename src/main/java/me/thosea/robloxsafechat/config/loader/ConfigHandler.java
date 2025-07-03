@@ -40,16 +40,17 @@ public final class ConfigHandler {
 			.setPrettyPrinting()
 			.disableHtmlEscaping()
 			.create();
+
 	private static final int CONFIG_VERSION = 2;
 
-	private static boolean configError;
-	private static String messageErrorJson;
+	private static boolean isConfigError;
+	private static String jsonMessageError;
 
 	public static void reload() {
 		LOGGER.info("[RobloxSafechat] Reloading config");
 
-		messageErrorJson = null;
-		configError = false;
+		jsonMessageError = null;
+		isConfigError = false;
 		SafechatConfig.PRESETS.clear();
 
 		if(ConfigFiles.CONFIG_FILE.exists()) {
@@ -59,7 +60,7 @@ public final class ConfigHandler {
 			} catch(Exception e) {
 				LOGGER.error("[RobloxSafechat] Failed to read config file from " + ConfigFiles.CONFIG_FILE, e);
 				ConfigOption.CONFIG_OPTIONS.values().forEach(ConfigOption::resetRaw);
-				configError = true;
+				isConfigError = true;
 			}
 		} else {
 			ConfigOption.CONFIG_OPTIONS.values().forEach(ConfigOption::resetRaw);
@@ -78,14 +79,14 @@ public final class ConfigHandler {
 	}
 
 	private static void loadMessages(File folder) {
-		//noinspection DataFlowIssue - checked by isDirectory
+		// noinspection DataFlowIssue - checked by isDirectory
 		for(File file : folder.listFiles()) {
 			if(file.isDirectory()) {
 				loadMessages(file);
 			} else if(file.getName().toLowerCase().endsWith(".json")) {
 				SafechatPreset preset = SafechatPreset.deserialize(file);
 				if(preset.root() == null) { // error logged by parser
-					messageErrorJson = preset.name();
+					jsonMessageError = preset.name();
 					RobloxSafechat.ROOT = DefaultChats.ROOT;
 					SafechatConfig.PRESETS.clear();
 					return;
@@ -172,7 +173,7 @@ public final class ConfigHandler {
 	private static long lastWriteAttemptTime = -1;
 
 	public static void writeConfig() {
-		if(configError) {
+		if(isConfigError) {
 			ChatComponent chat = getChatHud();
 			if(chat == null) return;
 
@@ -185,7 +186,7 @@ public final class ConfigHandler {
 				return;
 			} else {
 				lastWriteAttemptTime = -1;
-				configError = false;
+				isConfigError = false;
 				chat.addMessage(Component.literal("[RobloxSafechat] Your invalid config was overwritten.")
 						.withStyle(ChatFormatting.GOLD));
 			}
@@ -230,7 +231,7 @@ public final class ConfigHandler {
 	}
 
 	public static void sendErrorMessagesInChat() {
-		if(!configError && messageErrorJson == null) return;
+		if(!isConfigError && jsonMessageError == null) return;
 
 		ChatComponent chat = getChatHud();
 		if(chat == null) return;
@@ -247,16 +248,16 @@ public final class ConfigHandler {
 					.withClickEvent(new ClickEvent(Action.OPEN_FILE, path.toString()));
 		});
 
-		if(configError) {
+		if(isConfigError) {
 			chat.addMessage(Component
 					.literal("RobloxSafechat failed to read the config file, and is currently using the default settings, ")
 					.append(logText));
 		}
 
-		if(messageErrorJson != null) {
+		if(jsonMessageError != null) {
 			chat.addMessage(Component
 					.literal("RobloxSafechat failed to read the message file at " +
-							"/" + messageErrorJson + ".json, " +
+							"/" + jsonMessageError + ".json, " +
 							"and is using placeholder messages, ")
 					.append(logText));
 		}
