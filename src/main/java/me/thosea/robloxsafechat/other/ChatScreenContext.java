@@ -6,6 +6,7 @@ import net.minecraft.client.gui.components.ImageButton;
 public final class ChatScreenContext {
 	private ChatScreenContext() {}
 
+	public static int renderY;
 	private static GroupElement renderGroup = null;
 	private static ImageButton openedButton = null;
 

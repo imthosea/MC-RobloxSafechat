@@ -59,7 +59,7 @@ public abstract class MixinChatScreen extends Screen {
 			ChatScreenContext.getRenderGroup().renderGroup(
 					graphics,
 					(int) (ChatScreenContext.getOpenButton().getX() - (80 * scale)),
-					RobloxSafechat.renderY = (int) (ChatScreenContext.getOpenButton().getY() - (20 * scale)),
+					ChatScreenContext.renderY = (int) (ChatScreenContext.getOpenButton().getY() - (20 * scale)),
 					mouseX, mouseY);
 		}
 	}
