@@ -27,8 +27,6 @@ public final class RobloxSafechat implements ClientModInitializer {
 
 	public static GroupElement ROOT = DefaultChats.ROOT;
 
-	public static int renderY;
-
 	@Override
 	public void onInitializeClient() {
 		ConfigHandler.reload();
