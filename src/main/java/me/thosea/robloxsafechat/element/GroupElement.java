@@ -4,9 +4,9 @@ import com.google.common.collect.Lists;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import me.thosea.robloxsafechat.RobloxSafechat;
 import me.thosea.robloxsafechat.button.SCButton;
 import me.thosea.robloxsafechat.config.SafechatConfig;
+import me.thosea.robloxsafechat.other.ChatScreenContext;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;
@@ -72,11 +72,11 @@ public class GroupElement implements SafechatElement {
 			y = height;
 			y -= SCButton.HEIGHT;
 		}
-		if(y > RobloxSafechat.renderY) { // bottom of screen
-			y = RobloxSafechat.renderY;
+		if(y > ChatScreenContext.renderY) { // bottom of screen
+			y = ChatScreenContext.renderY;
 		}
 
-		int difference = Math.abs(y - RobloxSafechat.renderY) % SCButton.HEIGHT;
+		int difference = Math.abs(y - ChatScreenContext.renderY) % SCButton.HEIGHT;
 
 		if(difference >= SCButton.HEIGHT / 2) {
 			y += difference;
