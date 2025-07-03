@@ -97,4 +97,5 @@ public class SCButton {
 	public void setIsSettingsButton(boolean isSettingsButton) {
 		element.isSettingsButton = isSettingsButton;
 	}
+
 }
