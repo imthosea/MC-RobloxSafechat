@@ -56,7 +56,7 @@ public final class RobloxSafechat implements ClientModInitializer {
 
 		public Builderman goBack() {
 			if(current.parent == null) {
-				throw new IllegalStateException("No parent? Probably went to get the milk.");
+				throw new IllegalStateException("no parent found");
 			}
 
 			current = current.parent;
