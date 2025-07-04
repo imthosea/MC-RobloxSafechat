@@ -32,7 +32,7 @@ public class Update1To2 implements UpdateHandler {
 
 			SafechatPreset preset = SafechatPreset.deserialize("Default", target.toPath());
 			if(preset.root() == null) {
-				RobloxSafechat.ROOT = DefaultChats.ROOT;
+				RobloxSafechat.ROOT = DefaultChats.DEFAULT.root();
 			} else {
 				SafechatConfig.PRESETS.put("Default", preset);
 				RobloxSafechat.ROOT = preset.root();
