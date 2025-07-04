@@ -2,6 +2,14 @@
   "type": "group",
   "array": [
     {
+      "type": "chat",
+      "chat": "Use the Chat menu to talk to me."
+    },
+    {
+      "type": "chat",
+      "chat": "I can only see message chats."
+    },
+    {
       "type": "group",
       "name": "Hello",
       "array": [
@@ -64,6 +72,10 @@
               "chat": "Welcome to my barbeque"
             }
           ]
+        },
+        {
+          "type": "chat",
+          "chat": "Hey there!"
         },
         {
           "type": "group",
@@ -200,10 +212,6 @@
               "chat": "Happy LOL Day!"
             }
           ]
-        },
-        {
-          "type": "chat",
-          "chat": "Hey there!"
         }
       ]
     },
@@ -264,6 +272,14 @@
               "chat": "Hasta la bye bye!"
             }
           ]
+        },
+        {
+          "type": "chat",
+          "chat": "I'll be right back"
+        },
+        {
+          "type": "chat",
+          "chat": "I have to go"
         },
         {
           "type": "group",
@@ -342,14 +358,6 @@
               "chat": "My house is on fire! gtg."
             }
           ]
-        },
-        {
-          "type": "chat",
-          "chat": "I'll be right back"
-        },
-        {
-          "type": "chat",
-          "chat": "I have to go"
         }
       ]
     },
@@ -357,6 +365,10 @@
       "type": "group",
       "name": "Friend",
       "array": [
+        {
+          "type": "chat",
+          "chat": "Wanna be friends?"
+        },
         {
           "type": "group",
           "name": "Follow me",
@@ -546,10 +558,6 @@
               "chat": "Sorry, I'll stop now."
             }
           ]
-        },
-        {
-          "type": "chat",
-          "chat": "Wanna be friends?"
         }
       ]
     },
@@ -966,6 +974,18 @@
               ]
             },
             {
+              "type": "chat",
+              "chat": "Hamster"
+            },
+            {
+              "type": "chat",
+              "chat": "Monkey"
+            },
+            {
+              "type": "chat",
+              "chat": "Bears"
+            },
+            {
               "type": "group",
               "name": "Fish",
               "array": [
@@ -1022,6 +1042,10 @@
               ]
             },
             {
+              "type": "chat",
+              "chat": "Elephants"
+            },
+            {
               "type": "group",
               "name": "Mythical Beasts",
               "array": [
@@ -1066,22 +1090,6 @@
                   "chat": "Scylla and Charybdis"
                 }
               ]
-            },
-            {
-              "type": "chat",
-              "chat": "Hamster"
-            },
-            {
-              "type": "chat",
-              "chat": "Monkey"
-            },
-            {
-              "type": "chat",
-              "chat": "Bears"
-            },
-            {
-              "type": "chat",
-              "chat": "Elephants"
             }
           ]
         },
@@ -1089,6 +1097,56 @@
           "type": "group",
           "name": "Games",
           "array": [
+            {
+              "type": "group",
+              "name": "Roblox",
+              "array": [
+                {
+                  "type": "chat",
+                  "chat": "BrickBattle"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Community Building"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Roblox Minigames"
+                },
+                {
+                  "type": "chat",
+                  "chat": "Contest Place"
+                }
+              ]
+            },
+            {
+              "type": "chat",
+              "chat": "Action"
+            },
+            {
+              "type": "chat",
+              "chat": "Puzzle"
+            },
+            {
+              "type": "chat",
+              "chat": "Strategy"
+            },
+            {
+              "type": "chat",
+              "chat": "Racing"
+            },
+            {
+              "type": "chat",
+              "chat": "RPG"
+            },
+            {
+              "type": "chat",
+              "chat": "Obstacle Course"
+            },
+            {
+              "type": "chat",
+              "chat": "Tycoon"
+            },
             {
               "type": "group",
               "name": "Board games",
@@ -1122,54 +1180,6 @@
                   "chat": "Carcassonne"
                 }
               ]
-            },
-            {
-              "type": "chat",
-              "chat": "Roblox"
-            },
-            {
-              "type": "chat",
-              "chat": "BrickBattle"
-            },
-            {
-              "type": "chat",
-              "chat": "Community Building"
-            },
-            {
-              "type": "chat",
-              "chat": "Roblox Minigames"
-            },
-            {
-              "type": "chat",
-              "chat": "Contest Place"
-            },
-            {
-              "type": "chat",
-              "chat": "Action"
-            },
-            {
-              "type": "chat",
-              "chat": "Puzzle"
-            },
-            {
-              "type": "chat",
-              "chat": "Strategy"
-            },
-            {
-              "type": "chat",
-              "chat": "Racing"
-            },
-            {
-              "type": "chat",
-              "chat": "RPG"
-            },
-            {
-              "type": "chat",
-              "chat": "Obstacle Course"
-            },
-            {
-              "type": "chat",
-              "chat": "Tycoon"
             }
           ]
         },
@@ -1177,6 +1187,38 @@
           "type": "group",
           "name": "Sports",
           "array": [
+            {
+              "type": "chat",
+              "chat": "Hockey"
+            },
+            {
+              "type": "chat",
+              "chat": "Soccer"
+            },
+            {
+              "type": "chat",
+              "chat": "Football"
+            },
+            {
+              "type": "chat",
+              "chat": "Baseball"
+            },
+            {
+              "type": "chat",
+              "chat": "Basketball"
+            },
+            {
+              "type": "chat",
+              "chat": "Volleyball"
+            },
+            {
+              "type": "chat",
+              "chat": "Tennis"
+            },
+            {
+              "type": "chat",
+              "chat": "Sports team practice"
+            },
             {
               "type": "group",
               "name": "Watersports",
@@ -1272,38 +1314,6 @@
                   "chat": "Trampoline"
                 }
               ]
-            },
-            {
-              "type": "chat",
-              "chat": "Hockey"
-            },
-            {
-              "type": "chat",
-              "chat": "Soccer"
-            },
-            {
-              "type": "chat",
-              "chat": "Football"
-            },
-            {
-              "type": "chat",
-              "chat": "Baseball"
-            },
-            {
-              "type": "chat",
-              "chat": "Basketball"
-            },
-            {
-              "type": "chat",
-              "chat": "Volleyball"
-            },
-            {
-              "type": "chat",
-              "chat": "Tennis"
-            },
-            {
-              "type": "chat",
-              "chat": "Sports team practice"
             }
           ]
         },
@@ -1416,6 +1426,14 @@
               ]
             },
             {
+              "type": "chat",
+              "chat": "Dance"
+            },
+            {
+              "type": "chat",
+              "chat": "Gynastics"
+            },
+            {
               "type": "group",
               "name": "Martial Arts",
               "array": [
@@ -1440,6 +1458,10 @@
                   "chat": "Street fighting"
                 }
               ]
+            },
+            {
+              "type": "chat",
+              "chat": "Listening to music"
             },
             {
               "type": "group",
@@ -1470,18 +1492,6 @@
                   "chat": "Playing a weird instrument"
                 }
               ]
-            },
-            {
-              "type": "chat",
-              "chat": "Dance"
-            },
-            {
-              "type": "chat",
-              "chat": "Gynastics"
-            },
-            {
-              "type": "chat",
-              "chat": "Listening to music"
             },
             {
               "type": "chat",
@@ -1724,6 +1734,10 @@
               ]
             },
             {
+              "type": "chat",
+              "chat": "Canada"
+            },
+            {
               "type": "group",
               "name": "Alberta",
               "array": [
@@ -1776,6 +1790,14 @@
                   "chat": "Yukon"
                 }
               ]
+            },
+            {
+              "type": "chat",
+              "chat": "Mexico"
+            },
+            {
+              "type": "chat",
+              "chat": "Central America"
             },
             {
               "type": "group",
@@ -1899,18 +1921,6 @@
             },
             {
               "type": "chat",
-              "chat": "Canada"
-            },
-            {
-              "type": "chat",
-              "chat": "Mexico"
-            },
-            {
-              "type": "chat",
-              "chat": "Central America"
-            },
-            {
-              "type": "chat",
               "chat": "Australia"
             },
             {
@@ -2026,32 +2036,6 @@
       "name": "Game",
       "array": [
         {
-          "type": "group",
-          "name": "Game Commands",
-          "array": [
-            {
-              "type": "chat",
-              "chat": "regen"
-            },
-            {
-              "type": "chat",
-              "chat": "reset"
-            },
-            {
-              "type": "chat",
-              "chat": "go"
-            },
-            {
-              "type": "chat",
-              "chat": "fix"
-            },
-            {
-              "type": "chat",
-              "chat": "respawn"
-            }
-          ]
-        },
-        {
           "type": "chat",
           "chat": "Let's build"
         },
@@ -2106,6 +2090,32 @@
         {
           "type": "chat",
           "chat": "I'm on your side!"
+        },
+        {
+          "type": "group",
+          "name": "Game Commands",
+          "array": [
+            {
+              "type": "chat",
+              "chat": "regen"
+            },
+            {
+              "type": "chat",
+              "chat": "reset"
+            },
+            {
+              "type": "chat",
+              "chat": "go"
+            },
+            {
+              "type": "chat",
+              "chat": "fix"
+            },
+            {
+              "type": "chat",
+              "chat": "respawn"
+            }
+          ]
         }
       ]
     },
@@ -2113,6 +2123,26 @@
       "type": "group",
       "name": "Silly",
       "array": [
+        {
+          "type": "chat",
+          "chat": "Muahahahaha!"
+        },
+        {
+          "type": "chat",
+          "chat": "all your base are belong to me!"
+        },
+        {
+          "type": "chat",
+          "chat": "GET OFF MAH LAWN"
+        },
+        {
+          "type": "chat",
+          "chat": "TEH EPIK DUCK IS COMING!!!"
+        },
+        {
+          "type": "chat",
+          "chat": "ROFL"
+        },
         {
           "type": "group",
           "name": "1337",
@@ -2134,26 +2164,6 @@
               "chat": "ub3rR0xXorzage!"
             }
           ]
-        },
-        {
-          "type": "chat",
-          "chat": "Muahahahaha!"
-        },
-        {
-          "type": "chat",
-          "chat": "all your base are belong to me!"
-        },
-        {
-          "type": "chat",
-          "chat": "GET OFF MAH LAWN"
-        },
-        {
-          "type": "chat",
-          "chat": "TEH EPIK DUCK IS COMING!!!"
-        },
-        {
-          "type": "chat",
-          "chat": "ROFL"
         }
       ]
     },
@@ -2572,14 +2582,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "chat",
-      "chat": "Use the Chat menu to talk to me."
-    },
-    {
-      "type": "chat",
-      "chat": "I can only see message chats."
     }
   ]
 }
