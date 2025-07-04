@@ -20,7 +20,7 @@ public record SafechatPreset(String name, GroupElement root) {
 				LOGGER.warn("[RobloxSafechat] Unknown preset {}", name);
 				if(SafechatConfig.PRESETS.isEmpty()) {
 					LOGGER.warn("[RobloxSafechat] No presets loaded, using default");
-					RobloxSafechat.ROOT = DefaultChats.ROOT;
+					RobloxSafechat.ROOT = DefaultChats.DEFAULT.root();
 				} else {
 					preset = SafechatConfig.PRESETS.values().iterator().next();
 					SafechatConfig.SELECTED_PRESET.set(preset.name());
