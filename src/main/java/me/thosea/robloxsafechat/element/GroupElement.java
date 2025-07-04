@@ -168,22 +168,6 @@ public class GroupElement implements SafechatElement {
 		return this;
 	}
 
-	public GroupElement sort() {
-		list.sort((thing1, thing2) -> {
-			if(thing1 instanceof GroupElement) {
-				if(!(thing2 instanceof GroupElement))
-					// first is a group, second isn't
-					return -1;
-			} else if(thing2 instanceof GroupElement) {
-				// second is a group, first isn't
-				return 1;
-			}
-
-			return 0;
-		});
-		return this;
-	}
-
 	public static GroupElement deserializeRoot(JsonElement rootElement) {
 		if(!(rootElement instanceof JsonObject root)) {
 			throw new IllegalStateException("root element not an object");
@@ -202,22 +186,18 @@ public class GroupElement implements SafechatElement {
 
 	private static SafechatElement deserialize(JsonObject object) {
 		JsonElement typeElement = object.get("type");
-
 		if(typeElement == null) {
 			throw new IllegalStateException("No type element");
 		}
 
 		String type = typeElement.getAsString();
-
 		if(type.equalsIgnoreCase("group")) {
 			String name = null;
 			if(object.has("name")) {
 				name = object.get("name").getAsString();
 			}
 
-			JsonElement arrayElement = object.get("array");
-
-			if(!(arrayElement instanceof JsonArray array)) {
+			if(!(object.get("array") instanceof JsonArray array)) {
 				throw new IllegalStateException("Group element ha sno array");
 			}
 
