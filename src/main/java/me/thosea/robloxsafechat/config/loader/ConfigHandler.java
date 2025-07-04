@@ -12,7 +12,6 @@ import me.thosea.robloxsafechat.config.SafechatConfig;
 import me.thosea.robloxsafechat.config.SafechatPreset;
 import me.thosea.robloxsafechat.config.loader.updater.ConfigUpdater;
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.ChatComponent;
@@ -28,7 +27,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 import static me.thosea.robloxsafechat.RobloxSafechat.LOGGER;
 
@@ -87,7 +85,7 @@ public final class ConfigHandler {
 				SafechatPreset preset = SafechatPreset.deserialize(file);
 				if(preset.root() == null) { // error logged by parser
 					jsonMessageError = preset.name();
-					RobloxSafechat.ROOT = DefaultChats.ROOT;
+					RobloxSafechat.ROOT = DefaultChats.DEFAULT.root();
 					SafechatConfig.PRESETS.clear();
 					return;
 				} else {
@@ -100,34 +98,13 @@ public final class ConfigHandler {
 	}
 
 	public static void writeDefaultMessages() {
-		ModContainer container = FabricLoader.getInstance().getModContainer("robloxsafechat")
-				.orElseThrow(() -> new IllegalStateException("No mod container?"));
-		List<String> presets = container.findPath("default_chats/Presets.txt")
-				.map(path -> {
-					try {
-						return Files.readAllLines(path);
-					} catch(IOException e) {
-						throw new RuntimeException(e);
-					}
-				})
-				.orElseThrow(() -> new IllegalStateException("No presets file in jar?"));
-		for(String presetFile : presets) {
-			File target = new File(ConfigFiles.MESSAGES_FOLDER, presetFile);
-			if(target.exists()) {
-				continue;
-			}
+		DefaultChats.PRESETS.forEach((key, preset) -> {
+			File target = new File(ConfigFiles.MESSAGES_FOLDER, preset.name() + ".json");
+			if(target.exists()) return;
 
-			Path path = container.findPath("default_chats/" + presetFile)
-					.orElseThrow(() -> new IllegalStateException("Missing preset in jar: " + presetFile));
-
-			SafechatPreset preset = SafechatPreset.deserialize(presetFile.substring(0, presetFile.lastIndexOf('.')), path);
-			if(preset.root() == null) {
-				throw new IllegalStateException("Broken built-in preset " + presetFile);
-			}
 			SafechatConfig.PRESETS.put(preset.name(), preset);
-
-			writeJson(target, "preset " + presetFile, preset.root().serialize());
-		}
+			writeJson(target, key, preset.root().serialize());
+		});
 	}
 
 	private static void loadConfig(JsonObject obj) {

@@ -2,7 +2,6 @@ package me.thosea.robloxsafechat;
 
 import me.thosea.robloxsafechat.config.DefaultChats;
 import me.thosea.robloxsafechat.config.loader.ConfigHandler;
-import me.thosea.robloxsafechat.element.ChatElement;
 import me.thosea.robloxsafechat.element.GroupElement;
 import me.thosea.robloxsafechat.mixin.IdentifierAccessor;
 import net.fabricmc.api.ClientModInitializer;
@@ -28,41 +27,10 @@ public final class RobloxSafechat implements ClientModInitializer {
 	public static final ResourceLocation SETTINGS_SELECTED_KEY =
 			IdentifierAccessor.safechat$of(MOD_ID, "textures/gui/sprites/settingsicon/selected.png");
 
-	public static GroupElement ROOT = DefaultChats.ROOT;
+	public static GroupElement ROOT = DefaultChats.DEFAULT.root();
 
 	@Override
 	public void onInitializeClient() {
 		ConfigHandler.reload();
-	}
-
-	public static final class Builderman { // BUILDERMAN!??!!?!?!?1/1/1!?!?/1//!/?!/1/
-		private final GroupElement result = new GroupElement(null);
-		private GroupElement current = result;
-
-		public Builderman text(String text) {
-			current.add(new ChatElement(text));
-			return this;
-		}
-
-		public Builderman group(String name) {
-			GroupElement group = new GroupElement(name);
-			current.add(group);
-			current.sort();
-			current = group;
-			return this;
-		}
-
-		public Builderman goBack() {
-			if(current.parent == null) {
-				throw new IllegalStateException("no parent found");
-			}
-
-			current = current.parent;
-			return this;
-		}
-
-		public GroupElement build() {
-			return result;
-		}
 	}
 }
