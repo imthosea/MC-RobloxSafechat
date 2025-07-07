@@ -39,5 +39,7 @@ tasks.processResources {
 }
 
 tasks.jar {
-	from("LICENSE")
+	from("LICENSE") {
+		rename { "${it}_RobloxSafechat" }
+	}
 }
