@@ -6,7 +6,7 @@
   "name": "RobloxSafechat",
   "description": "Roblox's old safechat feature from 2007-2014 now in Minecraft!",
   "authors": ["Tiny Games - idea, icons & all default messages", "Thosea - programming"],
-  "license": "BSD 3-clause",
+  "license": "BSD 2-clause",
   "icon": "assets/robloxsafechat/icon.png",
   "entrypoints": {
     "client": [
