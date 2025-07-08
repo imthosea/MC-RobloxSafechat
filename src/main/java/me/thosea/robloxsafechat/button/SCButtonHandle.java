@@ -1,19 +1,24 @@
 package me.thosea.robloxsafechat.button;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import me.thosea.robloxsafechat.config.SafechatConfig;
+import me.thosea.robloxsafechat.mixin.WidgetAccessor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Tooltip;
+import net.minecraft.client.gui.components.WidgetTooltipHolder;
 import net.minecraft.client.sounds.SoundManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
+import org.joml.Matrix3x2fStack;
 
 import java.util.function.Supplier;
 
 final class SCButtonHandle extends Button {
+	@SuppressWarnings("DataFlowIssue")
+	private final WidgetTooltipHolder tooltip = ((WidgetAccessor) (Object) this).safechat$getTooltipHolder();
+
 	boolean isSettingsButton = false;
 
 	private float scale;
@@ -47,11 +52,11 @@ final class SCButtonHandle extends Button {
 		if(textWidth > SCButton.BASE_WIDTH) {
 			scale = ((float) (SCButton.BASE_WIDTH - 4) / (float) textWidth);
 
-			if(!isSettingsButton || getTooltip() == null) {
+			if(!isSettingsButton || tooltip.get() == null) {
 				if(scale <= SafechatConfig.TEXT_SCALE_THRESHOLD.get()) {
-					setTooltip(Tooltip.create(getMessage()));
+					tooltip.set(Tooltip.create(getMessage()));
 				} else {
-					setTooltip(null);
+					tooltip.set(null);
 				}
 			}
 
@@ -77,11 +82,11 @@ final class SCButtonHandle extends Button {
 
 	@Override
 	protected void renderScrollingString(GuiGraphics graphics, Font font, int i, int color) {
-		PoseStack pose = graphics.pose();
+		Matrix3x2fStack pose = graphics.pose();
 
-		pose.pushPose();
-		pose.scale(scale, scale, 1);
+		pose.pushMatrix();
+		pose.scale(scale, scale);
 		graphics.drawString(font, getMessage(), renderX, renderY, color);
-		pose.popPose();
+		pose.popMatrix();
 	}
 }

@@ -8,7 +8,8 @@
     "EditBoxAccessor",
     "IdentifierAccessor",
     "MixinChatScreen",
-    "MixinClientPacketListener"
+    "MixinClientPacketListener",
+    "WidgetAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
